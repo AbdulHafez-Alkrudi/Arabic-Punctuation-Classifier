@@ -7949,3 +7949,1712 @@ No POS data to display.
    QUESTION               0.000101
    SEMICOLON              0.000100
 📊 Figure saved: eda_outputs\class_distribution.png
+✅ Arabic text utilities loaded!
+   - Punctuation marks defined: 9
+   - Diacritics defined: 8
+   - Stopwords defined: 88
+======================================================================
+📏 LENGTH-PUNCTUATION RELATIONSHIP ANALYSIS
+======================================================================
+
+⏳ Analyzing 100,000 sentences...
+
+   ✅ Analyzed 100,000 sentences
+
+----------------------------------------------------------------------
+📊 PUNCTUATION METRICS BY SENTENCE LENGTH
+----------------------------------------------------------------------
+
+   Punctuation Count by Sentence Length:
+           punct_count                     punct_density           word_count
+                  mean        std min  max          mean       std      count
+length_bin                                                                   
+1-10          1.226154   0.532933   1    7      0.359063  0.342792      13818
+11-20         1.586646   0.907862   1   16      0.102584  0.057830      32529
+21-30         2.184532   1.286490   1   29      0.087192  0.050098      27464
+31-50         3.160920   2.076566   1   41      0.083657  0.052329      20476
+51-100        5.696706   5.328265   1   79      0.089022  0.072319       4949
+100+         25.731675  30.842984   1  182      0.138840  0.182583        764
+
+----------------------------------------------------------------------
+📊 TERMINAL MARK DISTRIBUTION BY LENGTH
+----------------------------------------------------------------------
+
+   Percentage of each terminal by sentence length:
+terminal         .     ؟
+length_bin              
+1-10         99.41  0.59
+11-20        99.78  0.22
+21-30        99.85  0.15
+31-50        99.89  0.11
+51-100       99.88  0.12
+100+        100.00  0.00
+
+----------------------------------------------------------------------
+💡 KEY INSIGHTS
+----------------------------------------------------------------------
+
+   • Correlation (length vs punct count): 0.6187
+   • Correlation (length vs punct density): -0.1891
+
+   • Period terminal in short sentences (≤20 words): 99.7%
+   • Period terminal in long sentences (>50 words): 99.9%
+   → Sentence length has MINIMAL effect on terminal mark
+📊 Figure saved: eda_outputs\length_punctuation_analysis.png
+✅ Arabic text utilities loaded!
+   - Punctuation marks defined: 9
+   - Diacritics defined: 8
+   - Stopwords defined: 88
+======================================================================
+📏 LENGTH-PUNCTUATION RELATIONSHIP ANALYSIS
+======================================================================
+
+⏳ Analyzing 11,731,360 sentences...
+
+   ✅ Analyzed 11,731,359 sentences
+
+----------------------------------------------------------------------
+📊 PUNCTUATION METRICS BY SENTENCE LENGTH
+----------------------------------------------------------------------
+
+   Punctuation Count by Sentence Length:
+           punct_count                      punct_density           word_count
+                  mean        std min   max          mean       std      count
+length_bin                                                                    
+1-10          1.217868   0.558830   1    12      0.343358  0.331046    1518206
+11-20         1.560627   0.890886   1    21      0.100676  0.056952    3650884
+21-30         2.142504   1.255314   1    38      0.085421  0.049211    3276435
+31-50         3.111492   1.981424   1    46      0.082073  0.049919    2567154
+51-100        5.625045   4.972579   1    87      0.087895  0.069419     622443
+100+         25.459158  37.319073   1  1198      0.117250  0.138894      96237
+
+----------------------------------------------------------------------
+📊 TERMINAL MARK DISTRIBUTION BY LENGTH
+----------------------------------------------------------------------
+
+   Percentage of each terminal by sentence length:
+terminal        .     ؟
+length_bin             
+1-10        99.54  0.46
+11-20       99.78  0.22
+21-30       99.87  0.13
+31-50       99.90  0.10
+51-100      99.87  0.13
+100+        99.83  0.17
+
+----------------------------------------------------------------------
+💡 KEY INSIGHTS
+----------------------------------------------------------------------
+
+   • Correlation (length vs punct count): 0.7736
+   • Correlation (length vs punct density): -0.1239
+
+   • Period terminal in short sentences (≤20 words): 99.7%
+   • Period terminal in long sentences (>50 words): 99.9%
+   → Sentence length has MINIMAL effect on terminal mark
+📊 Figure saved: eda_outputs\length_punctuation_analysis.png
+✅ Arabic text utilities loaded!
+   - Punctuation marks defined: 9
+   - Diacritics defined: 8
+   - Stopwords defined: 88
+✅ Arabic text utilities loaded!
+   - Punctuation marks defined: 9
+   - Diacritics defined: 8
+   - Stopwords defined: 88
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 100,000 sentences...
+
+   ✅ Analyzed 15,472,066 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+
+   Category Description                                     Count Percentage
+   ===========================================================================
+   Lo       Letter, Other (Arabic letters)             12,400,557     80.15%
+   Zs       Separator, Space                            2,435,464     15.74%
+   Po       Punctuation, Other                            269,240      1.74%
+   Nd       Number, Decimal Digit                         261,067      1.69%
+   Pd       Punctuation, Dash                              28,363      0.18%
+   Pe       Punctuation, Close                             24,374      0.16%
+   Ps       Punctuation, Open                              24,341      0.16%
+   Lu       Letter, Uppercase (Latin)                      16,089      0.10%
+   Ll       Letter, Lowercase (Latin)                      11,093      0.07%
+   Mn       Mark, Nonspacing (Diacritics)                   1,235      0.01%
+   Sk       Other                                             178      0.00%
+   Sm       Symbol, Math                                       26      0.00%
+   Pf       Other                                              25      0.00%
+   Pi       Other                                              14      0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ً                      5    0.0000%
+   -                    Dammatan ٌ                      0    0.0000%
+   ٍ                    Kasratan ٍ                     15    0.0001%
+   َ                    Fatha َ                        50    0.0003%
+   ُ                    Damma ُ                     1,094    0.0071%
+   ِ                    Kasra ِ                        53    0.0003%
+   ّ                    Shadda ّ                       14    0.0001%
+   ْ                    Sukun ْ                         4    0.0000%
+
+   Total diacritics: 1,235 (0.0080%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+----------------------------------------------------------------------
+📊 SPECIAL ARABIC CHARACTERS
+----------------------------------------------------------------------
+
+   Character    Name                                              Count Percentage
+   ----------------------------------------------------------------------
+   ـ            Tatweel ـ                                             0    0.0000%
+   ء            Hamza ء                                          39,331    0.2542%
+   آ            Alef Madda آ                                          0    0.0000%
+   أ            Alef Hamza Above أ                                    0    0.0000%
+   إ            Alef Hamza Below إ                                    0    0.0000%
+   ا            Alef ا                                        2,354,153   15.2155%
+   ة            Teh Marbuta ة                                   481,961    3.1150%
+   ى            Alef Maksura ى                                   99,291    0.6417%
+
+   ALEF VARIATIONS:
+   ا: 2,354,153 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 232,767
+   Western numerals (0-9): 28,300
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 100,000 sentences...
+
+   ✅ Analyzed 15,472,066 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                    Examples                         Count        %
+=====================================================================================
+Lo    Letter, Other                  أ, ب, ج (Arabic/CJK)        12,400,557   80.15%
+Zs    Separator, Space               Space, Tab                   2,435,464   15.74%
+Po    Punctuation, Other             !, ?, ., ،                     269,240    1.74%
+Nd    Number, Decimal Digit          0-9, ٠-٩                       261,067    1.69%
+Pd    Punctuation, Dash              -, –, —                         28,363    0.18%
+Pe    Punctuation, Close             ], }, )                         24,374    0.16%
+Ps    Punctuation, Open              [, {, (                         24,341    0.16%
+Lu    Letter, Uppercase              A, B, C                         16,089    0.10%
+Ll    Letter, Lowercase              a, b, c                         11,093    0.07%
+Mn    Mark, Nonspacing               فتحة, ضمة (Diacritics)           1,235    0.01%
+Sk    Symbol, Modifier               ^, `, ~                            178    0.00%
+Sm    Symbol, Math                   +, =, <, ∞                          26    0.00%
+Pf    Punctuation, Final quote       », “                                25    0.00%
+Pi    Punctuation, Initial quote     «, „                                14    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ً                      5    0.0000%
+   -                    Dammatan ٌ                      0    0.0000%
+   ٍ                    Kasratan ٍ                     15    0.0001%
+   َ                    Fatha َ                        50    0.0003%
+   ُ                    Damma ُ                     1,094    0.0071%
+   ِ                    Kasra ِ                        53    0.0003%
+   ّ                    Shadda ّ                       14    0.0001%
+   ْ                    Sukun ْ                         4    0.0000%
+
+   Total diacritics: 1,235 (0.0080%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+----------------------------------------------------------------------
+📊 SPECIAL ARABIC CHARACTERS
+----------------------------------------------------------------------
+
+   Character    Name                                          Count Percentage
+   ----------------------------------------------------------------------
+   ـ            Tatweel ـ                                         0    0.0000%
+   ء            Hamza ء                                      39,331    0.2542%
+   آ            Alef Madda آ                                      0    0.0000%
+   أ            Alef Hamza Above أ                                0    0.0000%
+   إ            Alef Hamza Below إ                                0    0.0000%
+   ا            Alef ا                                    2,354,153   15.2155%
+   ة            Teh Marbuta ة                               481,961    3.1150%
+   ى            Alef Maksura ى                               99,291    0.6417%
+
+   ALEF VARIATIONS:
+   ا: 2,354,153 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 232,767
+   Western numerals (0-9): 28,300
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 100,000 sentences...
+
+   ✅ Analyzed 15,472,066 characters
+
+=====================================================================================
+                           📊 UNICODE CATEGORY DISTRIBUTION                           
+=====================================================================================
+Cat   Description                    Examples                       Count          %
+-------------------------------------------------------------------------------------
+Lo    Letter, Other                  أ, ب, ج (Arabic)          12,400,557     80.15%
+Zs    Separator, Space               Space characters           2,435,464     15.74%
+Po    Punctuation, Other             !, ؟, ., ،                   269,240      1.74%
+Nd    Number, Decimal Digit          0-9, ٠-٩                     261,067      1.69%
+Pd    Punctuation, Dash              -, –, —                       28,363      0.18%
+Pe    Punctuation, Close             ], }, )                       24,374      0.16%
+Ps    Punctuation, Open              [, {, (                       24,341      0.16%
+Lu    Letter, Uppercase              A, B, C                       16,089      0.10%
+Ll    Letter, Lowercase              a, b, c                       11,093      0.07%
+Mn    Mark, Nonspacing               فتحة, ضمة (Diacritics)           1,235      0.01%
+Sk    Symbol, Modifier               ^, `, ~                          178      0.00%
+Sm    Symbol, Math                   +, =, <                           26      0.00%
+Pf    Punctuation, Final quote       », ”                              25      0.00%
+Pi    Punctuation, Initial quote     «, “                              14      0.00%
+
+-------------------------------------------------------------------------------------
+                           📊 ARABIC DIACRITICS (TASHKEEL)                            
+-------------------------------------------------------------------------------------
+   ً     Fathatan ً                                             5       0.0000%
+   -     Dammatan ٌ                                             0       0.0000%
+   ٍ     Kasratan ٍ                                            15       0.0001%
+   َ     Fatha َ                                               50       0.0003%
+   ُ     Damma ُ                                            1,094       0.0071%
+   ِ     Kasra ِ                                               53       0.0003%
+   ّ     Shadda ّ                                              14       0.0001%
+   ْ     Sukun ْ                                                4       0.0000%
+
+-------------------------------------------------------------------------------------
+                            📊 ARABIC ORTHOGRAPHY ANALYSIS                            
+-------------------------------------------------------------------------------------
+   ـ     Tatweel ـ                                              0       0.0000%
+   ء     Hamza ء                                           39,331       0.2542%
+   آ     Alef Madda آ                                           0       0.0000%
+   أ     Alef Hamza Above أ                                     0       0.0000%
+   إ     Alef Hamza Below إ                                     0       0.0000%
+   ا     Alef ا                                         2,354,153      15.2155%
+   ة     Teh Marbuta ة                                    481,961       3.1150%
+   ى     Alef Maksura ى                                    99,291       0.6417%
+
+   ALEF VARIATIONS BREAKDOWN (Total: 2,354,153)
+   ا (Alef Plain):       2,354,153 ( 100.0% of Alefs)
+   أ (Alef Hamza Above):               0 (   0.0% of Alefs)
+   إ (Alef Hamza Below):               0 (   0.0% of Alefs)
+   آ (Alef Madda):               0 (   0.0% of Alefs)
+   ٱ (Alef Wasla):               0 (   0.0% of Alefs)
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 100,000 sentences...
+
+   ✅ Analyzed 15,472,066 characters
+
+===============================================================================================
+                                📊 UNICODE CATEGORY DISTRIBUTION                                
+===============================================================================================
+Cat    Description               Examples                            Count            %
+-----------------------------------------------------------------------------------------------
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 100,000 sentences...
+
+   ✅ Analyzed 15,472,066 characters
+
+===============================================================================================
+                                📊 UNICODE CATEGORY DISTRIBUTION                                
+===============================================================================================
+Cat    Description               Examples                            Count            %
+-----------------------------------------------------------------------------------------------
+✅ Arabic text utilities loaded!
+   - Punctuation marks defined: 9
+   - Diacritics defined: 8
+   - Stopwords defined: 88
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 100,000 sentences...
+
+   ✅ Analyzed 15,472,066 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                           Count        %
+=====================================================================================
+Lo    Letter, Other                    12,400,557   80.15%
+Zs    Separator, Space                  2,435,464   15.74%
+Po    Punctuation, Other                  269,240    1.74%
+Nd    Number, Decimal Digit               261,067    1.69%
+Pd    Punctuation, Dash                    28,363    0.18%
+Pe    Punctuation, Close                   24,374    0.16%
+Ps    Punctuation, Open                    24,341    0.16%
+Lu    Letter, Uppercase                    16,089    0.10%
+Ll    Letter, Lowercase                    11,093    0.07%
+Mn    Mark, Nonspacing                      1,235    0.01%
+Sk    Symbol, Modifier                        178    0.00%
+Sm    Symbol, Math                             26    0.00%
+Pf    Punctuation, Final quote                 25    0.00%
+Pi    Punctuation, Initial quote               14    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ( ً)                   5    0.0000%
+   -                    Dammatan ( ٌ)                   0    0.0000%
+   ٍ                    Kasratan ( ٍ)                  15    0.0001%
+   َ                    Fatha ( َ)                     50    0.0003%
+   ُ                    Damma ( ُ)                  1,094    0.0071%
+   ِ                    Kasra ( ِ)                     53    0.0003%
+   ّ                    Shadda ( ّ)                    14    0.0001%
+   ْ                    Sukun ( ْ)                      4    0.0000%
+
+   Total diacritics: 1,235 (0.0080%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+----------------------------------------------------------------------
+📊 SPECIAL ARABIC CHARACTERS
+----------------------------------------------------------------------
+
+   Character    Name                                          Count Percentage
+   ----------------------------------------------------------------------
+   ـ            Tatweel (ـ)                                       0    0.0000%
+   ء            Hamza (ء)                                    39,331    0.2542%
+   آ            Alef Madda (آ)                                    0    0.0000%
+   أ            Alef Hamza Above (أ)                              0    0.0000%
+   إ            Alef Hamza Below (إ)                              0    0.0000%
+   ا            Alef (ا)                                  2,354,153   15.2155%
+   ة            Teh Marbuta (ة)                             481,961    3.1150%
+   ى            Alef Maksura (ى)                             99,291    0.6417%
+
+   ALEF VARIATIONS:
+   ا: 2,354,153 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 232,767
+   Western numerals (0-9): 28,300
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 100,000 sentences...
+
+   ✅ Analyzed 15,472,066 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                           Count        %
+=====================================================================================
+Lo    Letter, Other                    12,400,557   80.15%
+Zs    Separator, Space                  2,435,464   15.74%
+Po    Punctuation, Other                  269,240    1.74%
+Nd    Number, Decimal Digit               261,067    1.69%
+Pd    Punctuation, Dash                    28,363    0.18%
+Pe    Punctuation, Close                   24,374    0.16%
+Ps    Punctuation, Open                    24,341    0.16%
+Lu    Letter, Uppercase                    16,089    0.10%
+Ll    Letter, Lowercase                    11,093    0.07%
+Mn    Mark, Nonspacing                      1,235    0.01%
+Sk    Symbol, Modifier                        178    0.00%
+Sm    Symbol, Math                             26    0.00%
+Pf    Punctuation, Final quote                 25    0.00%
+Pi    Punctuation, Initial quote               14    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ( ً)                   5    0.0000%
+   -                    Dammatan ( ٌ)                   0    0.0000%
+   ٍ                    Kasratan ( ٍ)                  15    0.0001%
+   َ                    Fatha ( َ)                     50    0.0003%
+   ُ                    Damma ( ُ)                  1,094    0.0071%
+   ِ                    Kasra ( ِ)                     53    0.0003%
+   ّ                    Shadda ( ّ)                    14    0.0001%
+   ْ                    Sukun ( ْ)                      4    0.0000%
+
+   Total diacritics: 1,235 (0.0080%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+=====================================================================================
+                        📊 SPECIAL ARABIC CHARACTERS ANALYSIS                         
+=====================================================================================
+║ Char   ║ Character Name                      ║           Count ║          % ║
+╠════════╬═════════════════════════════════════╬═════════════════╬════════════╣
+║   ـ    ║ Tatweel (ـ)                         ║               0 ║    0.0000% ║
+║   ء    ║ Hamza (ء)                           ║          39,331 ║    0.2542% ║
+║   آ    ║ Alef Madda (آ)                      ║               0 ║    0.0000% ║
+║   أ    ║ Alef Hamza Above (أ)                ║               0 ║    0.0000% ║
+║   إ    ║ Alef Hamza Below (إ)                ║               0 ║    0.0000% ║
+║   ا    ║ Alef (ا)                            ║       2,354,153 ║   15.2155% ║
+║   ة    ║ Teh Marbuta (ة)                     ║         481,961 ║    3.1150% ║
+║   ى    ║ Alef Maksura (ى)                    ║          99,291 ║    0.6417% ║
+╚════════╩═════════════════════════════════════╩═════════════════╩════════════╝
+
+   ALEF VARIATIONS:
+   ا: 2,354,153 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 232,767
+   Western numerals (0-9): 28,300
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+✅ Arabic text utilities loaded!
+   - Punctuation marks defined: 9
+   - Diacritics defined: 8
+   - Stopwords defined: 88
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 10,000 sentences...
+
+   ✅ Analyzed 1,657,662 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                           Count        %
+=====================================================================================
+Lo    Letter, Other                     1,292,767   77.99%
+Zs    Separator, Space                    263,912   15.92%
+Nd    Number, Decimal Digit                56,109    3.38%
+Po    Punctuation, Other                   29,590    1.79%
+Pe    Punctuation, Close                    4,220    0.25%
+Ps    Punctuation, Open                     4,218    0.25%
+Pd    Punctuation, Dash                     3,996    0.24%
+Lu    Letter, Uppercase                     1,926    0.12%
+Ll    Letter, Lowercase                       762    0.05%
+Mn    Mark, Nonspacing                        135    0.01%
+Sk    Symbol, Modifier                         24    0.00%
+Sm    Symbol, Math                              3    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ( ً)                   3    0.0002%
+   -                    Dammatan ( ٌ)                   0    0.0000%
+   -                    Kasratan ( ٍ)                   0    0.0000%
+   َ                    Fatha ( َ)                      2    0.0001%
+   ُ                    Damma ( ُ)                    125    0.0075%
+   ِ                    Kasra ( ِ)                      5    0.0003%
+   -                    Shadda ( ّ)                     0    0.0000%
+   -                    Sukun ( ْ)                      0    0.0000%
+
+   Total diacritics: 135 (0.0081%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+=====================================================================================
+                        📊 SPECIAL ARABIC CHARACTERS ANALYSIS                         
+=====================================================================================
+║ Char   ║ Character Name                      ║           Count ║          % ║
+╠════════╬═════════════════════════════════════╬═════════════════╬════════════╣
+║   ـ    ║ Tatweel (ـ)                         ║     0.0000% ║
+║   ء    ║ Hamza (ء)                           ║     0.2444% ║
+║   آ    ║ Alef Madda (آ)                      ║     0.0000% ║
+║   أ    ║ Alef Hamza Above (أ)                ║     0.0000% ║
+║   إ    ║ Alef Hamza Below (إ)                ║     0.0000% ║
+║   ا    ║ Alef (ا)                            ║    14.6273% ║
+║   ة    ║ Teh Marbuta (ة)                     ║     3.1169% ║
+║   ى    ║ Alef Maksura (ى)                    ║     0.5774% ║
+╚════════╩═════════════════════════════════════╩═════════════════╩════════════╝
+
+   ALEF VARIATIONS:
+   ا: 242,471 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 51,440
+   Western numerals (0-9): 4,669
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 10,000 sentences...
+
+   ✅ Analyzed 1,657,662 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                           Count        %
+=====================================================================================
+Lo    Letter, Other                     1,292,767   77.99%
+Zs    Separator, Space                    263,912   15.92%
+Nd    Number, Decimal Digit                56,109    3.38%
+Po    Punctuation, Other                   29,590    1.79%
+Pe    Punctuation, Close                    4,220    0.25%
+Ps    Punctuation, Open                     4,218    0.25%
+Pd    Punctuation, Dash                     3,996    0.24%
+Lu    Letter, Uppercase                     1,926    0.12%
+Ll    Letter, Lowercase                       762    0.05%
+Mn    Mark, Nonspacing                        135    0.01%
+Sk    Symbol, Modifier                         24    0.00%
+Sm    Symbol, Math                              3    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ( ً)                   3    0.0002%
+   -                    Dammatan ( ٌ)                   0    0.0000%
+   -                    Kasratan ( ٍ)                   0    0.0000%
+   َ                    Fatha ( َ)                      2    0.0001%
+   ُ                    Damma ( ُ)                    125    0.0075%
+   ِ                    Kasra ( ِ)                      5    0.0003%
+   -                    Shadda ( ّ)                     0    0.0000%
+   -                    Sukun ( ْ)                      0    0.0000%
+
+   Total diacritics: 135 (0.0081%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+=====================================================================================
+                        📊 SPECIAL ARABIC CHARACTERS ANALYSIS                         
+=====================================================================================
+║ Char   ║ Character Name                      ║           Count ║          % ║
+╠════════╬═════════════════════════════════════╬═════════════════╬════════════╣
+║   ـ    ║ Tatweel (ـ)                         ║               0 ║    0.0000% ║
+║   ء    ║ Hamza (ء)                           ║           4,052 ║    0.2444% ║
+║   آ    ║ Alef Madda (آ)                      ║               0 ║    0.0000% ║
+║   أ    ║ Alef Hamza Above (أ)                ║               0 ║    0.0000% ║
+║   إ    ║ Alef Hamza Below (إ)                ║               0 ║    0.0000% ║
+║   ا    ║ Alef (ا)                            ║         242,471 ║   14.6273% ║
+║   ة    ║ Teh Marbuta (ة)                     ║          51,667 ║    3.1169% ║
+║   ى    ║ Alef Maksura (ى)                    ║           9,571 ║    0.5774% ║
+╚════════╩═════════════════════════════════════╩═════════════════╩════════════╝
+
+   ALEF VARIATIONS:
+   ا: 242,471 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 51,440
+   Western numerals (0-9): 4,669
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 10,000 sentences...
+
+   ✅ Analyzed 1,657,662 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                           Count        %
+=====================================================================================
+Lo    Letter, Other                     1,292,767   77.99%
+Zs    Separator, Space                    263,912   15.92%
+Nd    Number, Decimal Digit                56,109    3.38%
+Po    Punctuation, Other                   29,590    1.79%
+Pe    Punctuation, Close                    4,220    0.25%
+Ps    Punctuation, Open                     4,218    0.25%
+Pd    Punctuation, Dash                     3,996    0.24%
+Lu    Letter, Uppercase                     1,926    0.12%
+Ll    Letter, Lowercase                       762    0.05%
+Mn    Mark, Nonspacing                        135    0.01%
+Sk    Symbol, Modifier                         24    0.00%
+Sm    Symbol, Math                              3    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ( ً)                   3    0.0002%
+   -                    Dammatan ( ٌ)                   0    0.0000%
+   -                    Kasratan ( ٍ)                   0    0.0000%
+   َ                    Fatha ( َ)                      2    0.0001%
+   ُ                    Damma ( ُ)                    125    0.0075%
+   ِ                    Kasra ( ِ)                      5    0.0003%
+   -                    Shadda ( ّ)                     0    0.0000%
+   -                    Sukun ( ْ)                      0    0.0000%
+
+   Total diacritics: 135 (0.0081%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+================================================================================
+                      📊 SPECIAL ARABIC CHARACTERS ANALYSIS                      
+================================================================================
+  Char   | Character Name                 |           Count |          %
+--------------------------------------------------------------------------------
+  ـ    |  Tatweel                        |                0 |     0.0000%
+  ء    |  Hamza                          |            4,052 |     0.2444%
+  آ    |  Alef Madda                     |                0 |     0.0000%
+  أ    |  Alef Hamza Above               |                0 |     0.0000%
+  إ    |  Alef Hamza Below               |                0 |     0.0000%
+  ا    |  Alef                           |          242,471 |    14.6273%
+  ة    |  Teh Marbuta                    |           51,667 |     3.1169%
+  ى    |  Alef Maksura                   |            9,571 |     0.5774%
+--------------------------------------------------------------------------------
+
+   ALEF VARIATIONS:
+   ا: 242,471 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 51,440
+   Western numerals (0-9): 4,669
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 10,000 sentences...
+
+   ✅ Analyzed 1,657,662 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                           Count        %
+=====================================================================================
+Lo    Letter, Other                     1,292,767   77.99%
+Zs    Separator, Space                    263,912   15.92%
+Nd    Number, Decimal Digit                56,109    3.38%
+Po    Punctuation, Other                   29,590    1.79%
+Pe    Punctuation, Close                    4,220    0.25%
+Ps    Punctuation, Open                     4,218    0.25%
+Pd    Punctuation, Dash                     3,996    0.24%
+Lu    Letter, Uppercase                     1,926    0.12%
+Ll    Letter, Lowercase                       762    0.05%
+Mn    Mark, Nonspacing                        135    0.01%
+Sk    Symbol, Modifier                         24    0.00%
+Sm    Symbol, Math                              3    0.00%
+
+================================================================================
+                    📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS                     
+================================================================================
+  Sign   | Diacritic Name                 |           Count |          %
+--------------------------------------------------------------------------------
+  ـً     |  Fathatan ( ً)                  |                3 |     0.0002%
+  -      |  Dammatan ( ٌ)                  |                0 |     0.0000%
+  -      |  Kasratan ( ٍ)                  |                0 |     0.0000%
+  ـَ     |  Fatha ( َ)                     |                2 |     0.0001%
+  ـُ     |  Damma ( ُ)                     |              125 |     0.0075%
+  ـِ     |  Kasra ( ِ)                     |                5 |     0.0003%
+  -      |  Shadda ( ّ)                    |                0 |     0.0000%
+  -      |  Sukun ( ْ)                     |                0 |     0.0000%
+--------------------------------------------------------------------------------
+  Total diacritics: 135 (0.0081%)
+  → ✅ Very low diacritic usage - no special handling needed
+
+================================================================================
+                      📊 SPECIAL ARABIC CHARACTERS ANALYSIS                      
+================================================================================
+  Char   | Character Name                 |           Count |          %
+--------------------------------------------------------------------------------
+  ـ    |  Tatweel                        |                0 |     0.0000%
+  ء    |  Hamza                          |            4,052 |     0.2444%
+  آ    |  Alef Madda                     |                0 |     0.0000%
+  أ    |  Alef Hamza Above               |                0 |     0.0000%
+  إ    |  Alef Hamza Below               |                0 |     0.0000%
+  ا    |  Alef                           |          242,471 |    14.6273%
+  ة    |  Teh Marbuta                    |           51,667 |     3.1169%
+  ى    |  Alef Maksura                   |            9,571 |     0.5774%
+--------------------------------------------------------------------------------
+
+   ALEF VARIATIONS:
+   ا: 242,471 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 51,440
+   Western numerals (0-9): 4,669
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 10,000 sentences...
+
+   ✅ Analyzed 1,657,662 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                           Count        %
+=====================================================================================
+Lo    Letter, Other                     1,292,767   77.99%
+Zs    Separator, Space                    263,912   15.92%
+Nd    Number, Decimal Digit                56,109    3.38%
+Po    Punctuation, Other                   29,590    1.79%
+Pe    Punctuation, Close                    4,220    0.25%
+Ps    Punctuation, Open                     4,218    0.25%
+Pd    Punctuation, Dash                     3,996    0.24%
+Lu    Letter, Uppercase                     1,926    0.12%
+Ll    Letter, Lowercase                       762    0.05%
+Mn    Mark, Nonspacing                        135    0.01%
+Sk    Symbol, Modifier                         24    0.00%
+Sm    Symbol, Math                              3    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ( ً)                   3    0.0002%
+   -                    Dammatan ( ٌ)                   0    0.0000%
+   -                    Kasratan ( ٍ)                   0    0.0000%
+   َ                    Fatha ( َ)                      2    0.0001%
+   ُ                    Damma ( ُ)                    125    0.0075%
+   ِ                    Kasra ( ِ)                      5    0.0003%
+   -                    Shadda ( ّ)                     0    0.0000%
+   -                    Sukun ( ْ)                      0    0.0000%
+
+   Total diacritics: 135 (0.0081%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+================================================================================
+                      📊 SPECIAL ARABIC CHARACTERS ANALYSIS                      
+================================================================================
+  Char   | Character Name                 |           Count |          %
+--------------------------------------------------------------------------------
+  ـ    |  Tatweel                        |                0 |     0.0000%
+  ء    |  Hamza                          |            4,052 |     0.2444%
+  آ    |  Alef Madda                     |                0 |     0.0000%
+  أ    |  Alef Hamza Above               |                0 |     0.0000%
+  إ    |  Alef Hamza Below               |                0 |     0.0000%
+  ا    |  Alef                           |          242,471 |    14.6273%
+  ة    |  Teh Marbuta                    |           51,667 |     3.1169%
+  ى    |  Alef Maksura                   |            9,571 |     0.5774%
+--------------------------------------------------------------------------------
+
+   ALEF VARIATIONS:
+   ا: 242,471 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 51,440
+   Western numerals (0-9): 4,669
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 10,000 sentences...
+
+   ✅ Analyzed 1,657,662 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                           Count        %
+=====================================================================================
+Lo    Letter, Other                     1,292,767   77.99%
+Zs    Separator, Space                    263,912   15.92%
+Nd    Number, Decimal Digit                56,109    3.38%
+Po    Punctuation, Other                   29,590    1.79%
+Pe    Punctuation, Close                    4,220    0.25%
+Ps    Punctuation, Open                     4,218    0.25%
+Pd    Punctuation, Dash                     3,996    0.24%
+Lu    Letter, Uppercase                     1,926    0.12%
+Ll    Letter, Lowercase                       762    0.05%
+Mn    Mark, Nonspacing                        135    0.01%
+Sk    Symbol, Modifier                         24    0.00%
+Sm    Symbol, Math                              3    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ( ً)                   3    0.0002%
+   ٌ                    Dammatan ( ٌ)                   0    0.0000%
+   ٍ                    Kasratan ( ٍ)                   0    0.0000%
+   َ                    Fatha ( َ)                      2    0.0001%
+   ُ                    Damma ( ُ)                    125    0.0075%
+   ِ                    Kasra ( ِ)                      5    0.0003%
+   ّ                    Shadda ( ّ)                     0    0.0000%
+   ْ                    Sukun ( ْ)                      0    0.0000%
+
+   Total diacritics: 135 (0.0081%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+================================================================================
+                      📊 SPECIAL ARABIC CHARACTERS ANALYSIS                      
+================================================================================
+  Char   | Character Name                 |           Count |          %
+--------------------------------------------------------------------------------
+  ـ    |  Tatweel                        |                0 |     0.0000%
+  ء    |  Hamza                          |            4,052 |     0.2444%
+  آ    |  Alef Madda                     |                0 |     0.0000%
+  أ    |  Alef Hamza Above               |                0 |     0.0000%
+  إ    |  Alef Hamza Below               |                0 |     0.0000%
+  ا    |  Alef                           |          242,471 |    14.6273%
+  ة    |  Teh Marbuta                    |           51,667 |     3.1169%
+  ى    |  Alef Maksura                   |            9,571 |     0.5774%
+--------------------------------------------------------------------------------
+
+   ALEF VARIATIONS:
+   ا: 242,471 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 51,440
+   Western numerals (0-9): 4,669
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 10,000 sentences...
+
+   ✅ Analyzed 1,657,662 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                    Examples                         Count        %
+=====================================================================================
+Lo    Letter, Other                  أ, ب, ج (Arabic/CJK)         1,292,767   77.99%
+Zs    Separator, Space               Space, Tab                     263,912   15.92%
+Nd    Number, Decimal Digit          0-9, ٠-٩                        56,109    3.38%
+Po    Punctuation, Other             !, ?, ., ،                      29,590    1.79%
+Pe    Punctuation, Close             ], }, )                          4,220    0.25%
+Ps    Punctuation, Open              [, {, (                          4,218    0.25%
+Pd    Punctuation, Dash              -, –, —                          3,996    0.24%
+Lu    Letter, Uppercase              A, B, C                          1,926    0.12%
+Ll    Letter, Lowercase              a, b, c                            762    0.05%
+Mn    Mark, Nonspacing               فتحة, ضمة (Diacritics)             135    0.01%
+Sk    Symbol, Modifier               ^, `, ~                             24    0.00%
+Sm    Symbol, Math                   +, =, <, ∞                           3    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ( ً)                   3    0.0002%
+   ٌ                    Dammatan ( ٌ)                   0    0.0000%
+   ٍ                    Kasratan ( ٍ)                   0    0.0000%
+   َ                    Fatha ( َ)                      2    0.0001%
+   ُ                    Damma ( ُ)                    125    0.0075%
+   ِ                    Kasra ( ِ)                      5    0.0003%
+   ّ                    Shadda ( ّ)                     0    0.0000%
+   ْ                    Sukun ( ْ)                      0    0.0000%
+
+   Total diacritics: 135 (0.0081%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+================================================================================
+                      📊 SPECIAL ARABIC CHARACTERS ANALYSIS                      
+================================================================================
+  Char   | Character Name                 |           Count |          %
+--------------------------------------------------------------------------------
+  ـ    |  Tatweel                        |                0 |     0.0000%
+  ء    |  Hamza                          |            4,052 |     0.2444%
+  آ    |  Alef Madda                     |                0 |     0.0000%
+  أ    |  Alef Hamza Above               |                0 |     0.0000%
+  إ    |  Alef Hamza Below               |                0 |     0.0000%
+  ا    |  Alef                           |          242,471 |    14.6273%
+  ة    |  Teh Marbuta                    |           51,667 |     3.1169%
+  ى    |  Alef Maksura                   |            9,571 |     0.5774%
+--------------------------------------------------------------------------------
+
+   ALEF VARIATIONS:
+   ا: 242,471 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 51,440
+   Western numerals (0-9): 4,669
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 10,000 sentences...
+
+   ✅ Analyzed 1,657,662 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                    Examples                              Count        %
+=====================================================================================
+Lo    Letter, Other                  أ, ب, ج (Arabic/CJK)              1,292,767   77.99%
+Zs    Separator, Space               Space, Tab                          263,912   15.92%
+Nd    Number, Decimal Digit          0-9, ٠-٩                             56,109    3.38%
+Po    Punctuation, Other             !, ?, ., ،                           29,590    1.79%
+Pe    Punctuation, Close             ], }, )                               4,220    0.25%
+Ps    Punctuation, Open              [, {, (                               4,218    0.25%
+Pd    Punctuation, Dash              -, –, —                               3,996    0.24%
+Lu    Letter, Uppercase              A, B, C                               1,926    0.12%
+Ll    Letter, Lowercase              a, b, c                                 762    0.05%
+Mn    Mark, Nonspacing               فتحة, ضمة (Diacritics)                  135    0.01%
+Sk    Symbol, Modifier               ^, `, ~                                  24    0.00%
+Sm    Symbol, Math                   +, =, <, ∞                                3    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ( ً)                   3    0.0002%
+   ٌ                    Dammatan ( ٌ)                   0    0.0000%
+   ٍ                    Kasratan ( ٍ)                   0    0.0000%
+   َ                    Fatha ( َ)                      2    0.0001%
+   ُ                    Damma ( ُ)                    125    0.0075%
+   ِ                    Kasra ( ِ)                      5    0.0003%
+   ّ                    Shadda ( ّ)                     0    0.0000%
+   ْ                    Sukun ( ْ)                      0    0.0000%
+
+   Total diacritics: 135 (0.0081%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+================================================================================
+                      📊 SPECIAL ARABIC CHARACTERS ANALYSIS                      
+================================================================================
+  Char   | Character Name                 |           Count |          %
+--------------------------------------------------------------------------------
+  ـ    |  Tatweel                        |                0 |     0.0000%
+  ء    |  Hamza                          |            4,052 |     0.2444%
+  آ    |  Alef Madda                     |                0 |     0.0000%
+  أ    |  Alef Hamza Above               |                0 |     0.0000%
+  إ    |  Alef Hamza Below               |                0 |     0.0000%
+  ا    |  Alef                           |          242,471 |    14.6273%
+  ة    |  Teh Marbuta                    |           51,667 |     3.1169%
+  ى    |  Alef Maksura                   |            9,571 |     0.5774%
+--------------------------------------------------------------------------------
+
+   ALEF VARIATIONS:
+   ا: 242,471 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 51,440
+   Western numerals (0-9): 4,669
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 10,000 sentences...
+
+   ✅ Analyzed 1,657,662 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                    Examples                         Count        %
+=====================================================================================
+Lo    Letter, Other                  أ, ب, ج (Arabic/CJK)         1,292,767   77.99%
+Zs    Separator, Space               Space, Tab                     263,912   15.92%
+Nd    Number, Decimal Digit          0-9, ٠-٩                        56,109    3.38%
+Po    Punctuation, Other             !, ?, ., ،                      29,590    1.79%
+Pe    Punctuation, Close             ], }, )                          4,220    0.25%
+Ps    Punctuation, Open              [, {, (                          4,218    0.25%
+Pd    Punctuation, Dash              -, –, —                          3,996    0.24%
+Lu    Letter, Uppercase              A, B, C                          1,926    0.12%
+Ll    Letter, Lowercase              a, b, c                            762    0.05%
+Mn    Mark, Nonspacing               فتحة, ضمة (Diacritics)             135    0.01%
+Sk    Symbol, Modifier               ^, `, ~                             24    0.00%
+Sm    Symbol, Math                   +, =, <, ∞                           3    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ( ً)                   3    0.0002%
+   ٌ                    Dammatan ( ٌ)                   0    0.0000%
+   ٍ                    Kasratan ( ٍ)                   0    0.0000%
+   َ                    Fatha ( َ)                      2    0.0001%
+   ُ                    Damma ( ُ)                    125    0.0075%
+   ِ                    Kasra ( ِ)                      5    0.0003%
+   ّ                    Shadda ( ّ)                     0    0.0000%
+   ْ                    Sukun ( ْ)                      0    0.0000%
+
+   Total diacritics: 135 (0.0081%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+================================================================================
+                      📊 SPECIAL ARABIC CHARACTERS ANALYSIS                      
+================================================================================
+  Char   | Character Name                 |           Count |          %
+--------------------------------------------------------------------------------
+  ـ    |  Tatweel                        |                0 |     0.0000%
+  ء    |  Hamza                          |            4,052 |     0.2444%
+  آ    |  Alef Madda                     |                0 |     0.0000%
+  أ    |  Alef Hamza Above               |                0 |     0.0000%
+  إ    |  Alef Hamza Below               |                0 |     0.0000%
+  ا    |  Alef                           |          242,471 |    14.6273%
+  ة    |  Teh Marbuta                    |           51,667 |     3.1169%
+  ى    |  Alef Maksura                   |            9,571 |     0.5774%
+--------------------------------------------------------------------------------
+
+   ALEF VARIATIONS:
+   ا: 242,471 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 51,440
+   Western numerals (0-9): 4,669
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 10,000 sentences...
+
+   ✅ Analyzed 1,657,662 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                    Examples                         Count        %
+=====================================================================================
+Lo    Letter, Other                  أ, ب, ج (Arabic/CJK)         1,292,767   77.99%
+Zs    Separator, Space               Space, Tab                     263,912   15.92%
+Nd    Number, Decimal Digit          0-9, ٠-٩                        56,109    3.38%
+Po    Punctuation, Other             !, ?, ., ،                      29,590    1.79%
+Pe    Punctuation, Close             ], }, )                          4,220    0.25%
+Ps    Punctuation, Open              [, {, (                          4,218    0.25%
+Pd    Punctuation, Dash              -, –, —                          3,996    0.24%
+Lu    Letter, Uppercase              A, B, C                          1,926    0.12%
+Ll    Letter, Lowercase              a, b, c                            762    0.05%
+Mn    Mark, Nonspacing               فتحة, ضمة (Diacritics)             135    0.01%
+Sk    Symbol, Modifier               ^, `, ~                             24    0.00%
+Sm    Symbol, Math                   +, =, <, ∞                           3    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ( ً)                   3    0.0002%
+   ٌ                    Dammatan ( ٌ)                   0    0.0000%
+   ٍ                    Kasratan ( ٍ)                   0    0.0000%
+   َ                    Fatha ( َ)                      2    0.0001%
+   ُ                    Damma ( ُ)                    125    0.0075%
+   ِ                    Kasra ( ِ)                      5    0.0003%
+   ّ                    Shadda ( ّ)                     0    0.0000%
+   ْ                    Sukun ( ْ)                      0    0.0000%
+
+   Total diacritics: 135 (0.0081%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+================================================================================
+                      📊 SPECIAL ARABIC CHARACTERS ANALYSIS                      
+================================================================================
+  Char   | Character Name                 |           Count |          %
+--------------------------------------------------------------------------------
+  ـ    |  Tatweel                        |                0 |     0.0000%
+  ء    |  Hamza                          |            4,052 |     0.2444%
+  آ    |  Alef Madda                     |                0 |     0.0000%
+  أ    |  Alef Hamza Above               |                0 |     0.0000%
+  إ    |  Alef Hamza Below               |                0 |     0.0000%
+  ا    |  Alef                           |          242,471 |    14.6273%
+  ة    |  Teh Marbuta                    |           51,667 |     3.1169%
+  ى    |  Alef Maksura                   |            9,571 |     0.5774%
+--------------------------------------------------------------------------------
+
+   ALEF VARIATIONS:
+   ا: 242,471 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 51,440
+   Western numerals (0-9): 4,669
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+✅ Arabic text utilities loaded!
+   - Punctuation marks defined: 9
+   - Diacritics defined: 8
+   - Stopwords defined: 88
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 100,000 sentences...
+
+   ✅ Analyzed 15,472,066 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                    Examples                         Count        %
+=====================================================================================
+Lo    Letter, Other                  أ, ب, ج (Arabic/CJK)        12,400,557   80.15%
+Zs    Separator, Space               Space, Tab                   2,435,464   15.74%
+Po    Punctuation, Other             !, ?, ., ،                     269,240    1.74%
+Nd    Number, Decimal Digit          0-9, ٠-٩                       261,067    1.69%
+Pd    Punctuation, Dash              -, –, —                         28,363    0.18%
+Pe    Punctuation, Close             ], }, )                         24,374    0.16%
+Ps    Punctuation, Open              [, {, (                         24,341    0.16%
+Lu    Letter, Uppercase              A, B, C                         16,089    0.10%
+Ll    Letter, Lowercase              a, b, c                         11,093    0.07%
+Mn    Mark, Nonspacing               فتحة, ضمة (Diacritics)           1,235    0.01%
+Sk    Symbol, Modifier               ^, `, ~                            178    0.00%
+Sm    Symbol, Math                   +, =, <, ∞                          26    0.00%
+Pf    Punctuation, Final quote       », “                                25    0.00%
+Pi    Punctuation, Initial quote     «, „                                14    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ( ً)                   5    0.0000%
+   ٌ                    Dammatan ( ٌ)                   0    0.0000%
+   ٍ                    Kasratan ( ٍ)                  15    0.0001%
+   َ                    Fatha ( َ)                     50    0.0003%
+   ُ                    Damma ( ُ)                  1,094    0.0071%
+   ِ                    Kasra ( ِ)                     53    0.0003%
+   ّ                    Shadda ( ّ)                    14    0.0001%
+   ْ                    Sukun ( ْ)                      4    0.0000%
+
+   Total diacritics: 1,235 (0.0080%)
+   → ✅ Very low diacritic usage - no special handling needed
+
+================================================================================
+                      📊 SPECIAL ARABIC CHARACTERS ANALYSIS                      
+================================================================================
+  Char   | Character Name                 |           Count |          %
+--------------------------------------------------------------------------------
+  ـ    |  Tatweel                        |                0 |     0.0000%
+  ء    |  Hamza                          |           39,331 |     0.2542%
+  آ    |  Alef Madda                     |                0 |     0.0000%
+  أ    |  Alef Hamza Above               |                0 |     0.0000%
+  إ    |  Alef Hamza Below               |                0 |     0.0000%
+  ا    |  Alef                           |        2,354,153 |    15.2155%
+  ة    |  Teh Marbuta                    |          481,961 |     3.1150%
+  ى    |  Alef Maksura                   |           99,291 |     0.6417%
+--------------------------------------------------------------------------------
+
+   ALEF VARIATIONS:
+   ا: 2,354,153 (100.0% of all alefs)
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 232,767
+   Western numerals (0-9): 28,300
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+✅ Arabic text utilities loaded!
+   - Punctuation marks defined: 9
+   - Diacritics defined: 8
+   - Stopwords defined: 88
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 11,731,360 sentences...
+✅ Arabic text utilities loaded!
+   - Punctuation marks defined: 9
+   - Diacritics defined: 8
+   - Stopwords defined: 88
+======================================================================
+🔤 CHARACTER-LEVEL ANALYSIS
+======================================================================
+
+⏳ Analyzing 11,731,360 sentences...
+
+   ✅ Analyzed 1,912,920,209 characters
+
+----------------------------------------------------------------------
+📊 UNICODE CATEGORY DISTRIBUTION
+----------------------------------------------------------------------
+Cat   Description                    Examples                         Count        %
+=====================================================================================
+Lo    Letter, Other                  أ, ب, ج (Arabic/CJK)      1,530,313,285   80.00%
+Zs    Separator, Space               Space, Tab                 297,739,751   15.56%
+Nd    Number, Decimal Digit          0-9, ٠-٩                    33,295,177    1.74%
+Po    Punctuation, Other             !, ?, ., ،                  31,862,584    1.67%
+Mn    Mark, Nonspacing               فتحة, ضمة (Diacritics)       5,192,773    0.27%
+Pd    Punctuation, Dash              -, –, —                      4,071,232    0.21%
+Pe    Punctuation, Close             ], }, )                      3,289,649    0.17%
+Ps    Punctuation, Open              [, {, (                      3,287,391    0.17%
+Lu    Letter, Uppercase              A, B, C                      2,158,957    0.11%
+Ll    Letter, Lowercase              a, b, c                      1,607,825    0.08%
+Sk    Symbol, Modifier               ^, `, ~                         76,838    0.00%
+Sm    Symbol, Math                   +, =, <, ∞                       9,133    0.00%
+So    Symbol, Other                  ©, ®, ☀, ⚽                       9,042    0.00%
+Pf    Punctuation, Final quote       », “                             3,303    0.00%
+Pi    Punctuation, Initial quote     «, „                             3,220    0.00%
+No    Number, Other                  ½, ², ³                             24    0.00%
+Sc    Symbol, Currency               $, €, £, ﷼                          22    0.00%
+Lm    Letter, Modifier               ʰ, ワイト                               2    0.00%
+Me    Mark, Enclosing                ⃝, ⃣                                 1    0.00%
+
+----------------------------------------------------------------------
+📊 ARABIC DIACRITICS (TASHKEEL) ANALYSIS
+----------------------------------------------------------------------
+
+   Diacritic            Name                        Count Percentage
+   -----------------------------------------------------------------
+   ً                    Fathatan ( ً)           2,032,681    0.1063%
+   ٌ                    Dammatan ( ٌ)              13,546    0.0007%
+   ٍ                    Kasratan ( ٍ)              55,925    0.0029%
+   َ                    Fatha ( َ)                427,800    0.0224%
+   ُ                    Damma ( ُ)              1,177,746    0.0616%
+   ِ                    Kasra ( ِ)                266,072    0.0139%
+   ّ                    Shadda ( ّ)             1,197,973    0.0626%
+   ْ                    Sukun ( ْ)                 21,022    0.0011%
+
+   Total diacritics: 5,192,765 (0.2715%)
+   → ⚠️  Significant diacritics - consider removal in preprocessing
+
+================================================================================
+                      📊 SPECIAL ARABIC CHARACTERS ANALYSIS                      
+================================================================================
+  Char   | Character Name                 |           Count |          %
+--------------------------------------------------------------------------------
+  ـ    |  Tatweel                        |                0 |     0.0000%
+  ء    |  Hamza                          |        5,404,173 |     0.2825%
+  آ    |  Alef Madda                     |                0 |     0.0000%
+  أ    |  Alef Hamza Above               |                0 |     0.0000%
+  إ    |  Alef Hamza Below               |                0 |     0.0000%
+  ا    |  Alef                           |      291,728,490 |    15.2504%
+  ة    |  Teh Marbuta                    |       59,486,735 |     3.1097%
+  ى    |  Alef Maksura                   |       12,326,277 |     0.6444%
+--------------------------------------------------------------------------------
+
+   ALEF VARIATIONS:
+   ا: 291,728,490 (100.0% of all alefs)
+   ٱ: 29 (0.0% of all alefs)
+
+   → ⚠️  Multiple Alef forms detected - consider normalization
+
+----------------------------------------------------------------------
+📊 NUMBER SYSTEMS
+----------------------------------------------------------------------
+
+   Arabic numerals (٠-٩): 6,802,071
+   Western numerals (0-9): 26,492,379
+
+   → ⚠️  Mixed numeral systems - consider normalizing to one
+✅ Transformers library available
+======================================================================
+🔤 TOKENIZER COMPARISON ANALYSIS
+======================================================================
+
+⏳ Comparing tokenizers on 10,000 sentences...
+   ✅ Loaded 10000 sentences
+
+   Analyzing MARBERT-v2...
+      ✅ Complete (vocab size: 100,000)
+
+   Analyzing CAMeLBERT-Mix...
+      ✅ Complete (vocab size: 30,000)
+
+   Analyzing AraBERT-v2...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing AraGPT2-Mega...
+      ❌ Error: The repository for aubmindlab/aragpt2-mega contains custom code which must be executed to correctly load the model. You can inspect the repository content at https://hf.co/aubmindlab/aragpt2-mega.
+Please pass the argument `trust_remote_code=True` to allow custom code to be run.
+
+   Analyzing AraGPT2...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing AraElectra...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing XLM-RoBERTa-L...
+      ✅ Complete (vocab size: 250,002)
+
+   Analyzing XLM-RoBERTa...
+      ✅ Complete (vocab size: 250,002)
+
+   Analyzing mBERT...
+      ✅ Complete (vocab size: 119,547)
+
+--------------------------------------------------------------------------------
+📊 TOKENIZER COMPARISON RESULTS
+--------------------------------------------------------------------------------
+
+Tokenizer            Vocab Size   Avg Tokens  Subword Ratio    Avg UNK
+================================================================================
+MARBERT-v2              100,000         28.8           1.39       0.00
+AraGPT2                  64,000         31.3           1.55       0.00
+CAMeLBERT-Mix            30,000         32.0           1.55       0.02
+AraElectra               64,000         28.7           1.40       0.24
+XLM-RoBERTa-L           250,002         40.0           1.94       0.00
+XLM-RoBERTa             250,002         40.0           1.94       0.00
+mBERT                   119,547         50.0           2.35       0.62
+AraBERT-v2               64,000         41.1           1.95       1.56
+
+--------------------------------------------------------------------------------
+💡 RECOMMENDATION
+--------------------------------------------------------------------------------
+
+   🏆 BEST TOKENIZER: MARBERT-v2
+   Model: UBC-NLP/MARBERTv2
+
+   Reasons:
+   • Lowest/Low UNK rate: 0.00 per sentence
+   • Reasonable subword expansion: 1.39x
+   • Vocabulary size: 100,000
+
+   Usage:
+   ```python
+   from transformers import AutoTokenizer
+   tokenizer = AutoTokenizer.from_pretrained('UBC-NLP/MARBERTv2')
+   ```
+======================================================================
+🔤 TOKENIZER COMPARISON ANALYSIS
+======================================================================
+
+⏳ Comparing tokenizers on 10,000 sentences...
+   ✅ Loaded 10000 sentences
+
+   Analyzing MARBERT-v2...
+      ✅ Complete (vocab size: 100,000)
+
+   Analyzing CAMeLBERT-Mix...
+      ✅ Complete (vocab size: 30,000)
+
+   Analyzing AraBERT-v2...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing AraGPT2-Mega...
+      ❌ Error: The repository for aubmindlab/aragpt2-mega contains custom code which must be executed to correctly load the model. You can inspect the repository content at https://hf.co/aubmindlab/aragpt2-mega.
+Please pass the argument `trust_remote_code=True` to allow custom code to be run.
+
+   Analyzing AraGPT2...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing AraElectra...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing XLM-RoBERTa-L...
+      ✅ Complete (vocab size: 250,002)
+
+   Analyzing XLM-RoBERTa...
+      ✅ Complete (vocab size: 250,002)
+
+   Analyzing mBERT...
+      ✅ Complete (vocab size: 119,547)
+
+--------------------------------------------------------------------------------
+📊 TOKENIZER COMPARISON RESULTS
+--------------------------------------------------------------------------------
+
+Tokenizer            Vocab Size   Avg Tokens  Subword Ratio    Avg UNK
+================================================================================
+MARBERT-v2              100,000         28.8           1.39       0.00
+AraGPT2                  64,000         31.3           1.55       0.00
+CAMeLBERT-Mix            30,000         32.0           1.55       0.02
+AraElectra               64,000         28.7           1.40       0.24
+XLM-RoBERTa-L           250,002         40.0           1.94       0.00
+XLM-RoBERTa             250,002         40.0           1.94       0.00
+mBERT                   119,547         50.0           2.35       0.62
+AraBERT-v2               64,000         41.1           1.95       1.56
+
+--------------------------------------------------------------------------------
+💡 RECOMMENDATION
+--------------------------------------------------------------------------------
+
+   🏆 BEST TOKENIZER: MARBERT-v2
+   Model: UBC-NLP/MARBERTv2
+
+   Reasons:
+   • Lowest/Low UNK rate: 0.00 per sentence
+   • Reasonable subword expansion: 1.39x
+   • Vocabulary size: 100,000
+
+   Usage:
+   ```python
+   from transformers import AutoTokenizer
+   tokenizer = AutoTokenizer.from_pretrained('UBC-NLP/MARBERTv2')
+   ```
+======================================================================
+🔤 TOKENIZER COMPARISON ANALYSIS
+======================================================================
+
+⏳ Comparing tokenizers on 10,000 sentences...
+   ✅ Loaded 10000 sentences
+
+   Analyzing MARBERT-v2...
+      ✅ Complete (vocab size: 100,000)
+
+   Analyzing CAMeLBERT-Mix...
+      ✅ Complete (vocab size: 30,000)
+
+   Analyzing AraBERT-v2...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing AraGPT2-Mega...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing AraGPT2...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing AraElectra...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing XLM-RoBERTa-L...
+      ✅ Complete (vocab size: 250,002)
+
+   Analyzing XLM-RoBERTa...
+      ✅ Complete (vocab size: 250,002)
+
+   Analyzing mBERT...
+      ✅ Complete (vocab size: 119,547)
+
+--------------------------------------------------------------------------------
+📊 TOKENIZER COMPARISON RESULTS
+--------------------------------------------------------------------------------
+
+Tokenizer            Vocab Size   Avg Tokens  Subword Ratio    Avg UNK
+================================================================================
+MARBERT-v2              100,000         28.8           1.39       0.00
+AraGPT2-Mega             64,000         31.3           1.55       0.00
+AraGPT2                  64,000         31.3           1.55       0.00
+CAMeLBERT-Mix            30,000         32.0           1.55       0.02
+AraElectra               64,000         28.7           1.40       0.24
+XLM-RoBERTa-L           250,002         40.0           1.94       0.00
+XLM-RoBERTa             250,002         40.0           1.94       0.00
+mBERT                   119,547         50.0           2.35       0.62
+AraBERT-v2               64,000         41.1           1.95       1.56
+
+--------------------------------------------------------------------------------
+💡 RECOMMENDATION
+--------------------------------------------------------------------------------
+
+   🏆 BEST TOKENIZER: MARBERT-v2
+   Model: UBC-NLP/MARBERTv2
+
+   Reasons:
+   • Lowest/Low UNK rate: 0.00 per sentence
+   • Reasonable subword expansion: 1.39x
+   • Vocabulary size: 100,000
+
+   Usage:
+   ```python
+   from transformers import AutoTokenizer
+   tokenizer = AutoTokenizer.from_pretrained('UBC-NLP/MARBERTv2')
+   ```
+✅ Arabic text utilities loaded!
+   - Punctuation marks defined: 9
+   - Diacritics defined: 8
+   - Stopwords defined: 88
+✅ Arabic text utilities loaded!
+   - Punctuation marks defined: 9
+   - Diacritics defined: 8
+   - Stopwords defined: 88
+======================================================================
+🔤 TOKENIZER COMPARISON ANALYSIS
+======================================================================
+
+⏳ Comparing tokenizers on 1,000,000 sentences...
+   ✅ Loaded 1000000 sentences
+
+   Analyzing MARBERT-v2...
+      ✅ Complete (vocab size: 100,000)
+
+   Analyzing CAMeLBERT-Mix...
+      ✅ Complete (vocab size: 30,000)
+
+   Analyzing AraBERT-v2...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing AraGPT2-Mega...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing AraGPT2...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing AraElectra...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing XLM-RoBERTa-L...
+      ✅ Complete (vocab size: 250,002)
+
+   Analyzing XLM-RoBERTa...
+      ✅ Complete (vocab size: 250,002)
+
+   Analyzing mBERT...
+      ✅ Complete (vocab size: 119,547)
+
+--------------------------------------------------------------------------------
+📊 TOKENIZER COMPARISON RESULTS
+--------------------------------------------------------------------------------
+
+Tokenizer            Vocab Size   Avg Tokens  Subword Ratio    Avg UNK
+================================================================================
+MARBERT-v2              100,000         28.8           1.39       0.00
+AraGPT2-Mega             64,000         31.3           1.55       0.00
+AraGPT2                  64,000         31.3           1.55       0.00
+CAMeLBERT-Mix            30,000         32.0           1.55       0.02
+AraElectra               64,000         28.7           1.40       0.24
+XLM-RoBERTa-L           250,002         40.0           1.94       0.00
+XLM-RoBERTa             250,002         40.0           1.94       0.00
+mBERT                   119,547         50.0           2.35       0.62
+AraBERT-v2               64,000         41.1           1.95       1.56
+
+--------------------------------------------------------------------------------
+💡 RECOMMENDATION
+--------------------------------------------------------------------------------
+
+   🏆 BEST TOKENIZER: MARBERT-v2
+   Model: UBC-NLP/MARBERTv2
+
+   Reasons:
+   • Lowest/Low UNK rate: 0.00 per sentence
+   • Reasonable subword expansion: 1.39x
+   • Vocabulary size: 100,000
+
+   Usage:
+   ```python
+   from transformers import AutoTokenizer
+   tokenizer = AutoTokenizer.from_pretrained('UBC-NLP/MARBERTv2')
+   ```
+✅ Arabic text utilities loaded!
+   - Punctuation marks defined: 9
+   - Diacritics defined: 8
+   - Stopwords defined: 88
+======================================================================
+🔤 TOKENIZER COMPARISON ANALYSIS
+======================================================================
+
+⏳ Comparing tokenizers on 11,731,360 sentences...
+   ✅ Loaded 11731360 sentences
+
+   Analyzing MARBERT-v2...
+      ✅ Complete (vocab size: 100,000)
+
+   Analyzing CAMeLBERT-Mix...
+      ✅ Complete (vocab size: 30,000)
+
+   Analyzing AraBERT-v2...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing AraGPT2-Mega...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing AraGPT2...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing AraElectra...
+      ✅ Complete (vocab size: 64,000)
+
+   Analyzing XLM-RoBERTa-L...
+      ✅ Complete (vocab size: 250,002)
+
+   Analyzing XLM-RoBERTa...
+      ✅ Complete (vocab size: 250,002)
+
+   Analyzing mBERT...
+      ✅ Complete (vocab size: 119,547)
+
+--------------------------------------------------------------------------------
+📊 TOKENIZER COMPARISON RESULTS
+--------------------------------------------------------------------------------
+
+Tokenizer            Vocab Size   Avg Tokens  Subword Ratio    Avg UNK
+================================================================================
+MARBERT-v2              100,000         28.8           1.39       0.00
+AraGPT2-Mega             64,000         31.3           1.55       0.00
+AraGPT2                  64,000         31.3           1.55       0.00
+CAMeLBERT-Mix            30,000         32.0           1.55       0.02
+AraElectra               64,000         28.7           1.40       0.24
+XLM-RoBERTa-L           250,002         40.0           1.94       0.00
+XLM-RoBERTa             250,002         40.0           1.94       0.00
+mBERT                   119,547         50.0           2.35       0.62
+AraBERT-v2               64,000         41.1           1.95       1.56
+
+--------------------------------------------------------------------------------
+💡 RECOMMENDATION
+--------------------------------------------------------------------------------
+
+   🏆 BEST TOKENIZER: MARBERT-v2
+   Model: UBC-NLP/MARBERTv2
+
+   Reasons:
+   • Lowest/Low UNK rate: 0.00 per sentence
+   • Reasonable subword expansion: 1.39x
+   • Vocabulary size: 100,000
+
+   Usage:
+   ```python
+   from transformers import AutoTokenizer
+   tokenizer = AutoTokenizer.from_pretrained('UBC-NLP/MARBERTv2')
+   ```
